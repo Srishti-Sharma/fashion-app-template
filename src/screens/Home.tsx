@@ -105,7 +105,6 @@ interface CardProps {
 }
 
 function Card({item, handlePress}: CardProps) {
-  console.log('CARD handlePress ', handlePress, ' item ', item);
   return (
     <TouchableOpacity
       style={styles.cardContainer}
@@ -130,7 +129,6 @@ interface Props {
 export default class Home extends Component<Props, {}> {
   constructor(props: Props) {
     super(props);
-    console.log('this.props ', props);
   }
 
   handlePress = (item: any) => {
